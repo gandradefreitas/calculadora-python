@@ -7,8 +7,8 @@ os módulos de operações, histórico e interface.
 """
 
 import operacao
-from Projeto_Calculadora_V2 import historico, interface
-
+import historico
+import interface
 
 def main():
 
