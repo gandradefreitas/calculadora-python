@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+
+    <link rel="stylesheet"
+    href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <!-- Container principal -->
+    <div class="container">
+
+        <!-- Visor da calculadora -->
+        <input type="text" id="visor" readonly>
+
+
+
+        <h2 id="resultado"></h2>
+
+    <!-- Área dos botões -->
+    <div class="botoes">
+
+        <!-- Primeira linha -->
+        <button onclick="adicionarNumero(7)"> 7 </button>
+        <button onclick="adicionarNumero(8)"> 8 </button>
+        <button onclick="adicionarNumero(9)"> 9 </button>
+        <button onclick="adicionarOperador('/')"> / </button>
+
+        <!-- Segunda linha -->
+        <button onclick="adicionarNumero(4)"> 4 </button>
+        <button onclick="adicionarNumero(5)"> 5 </button>
+        <button onclick="adicionarNumero(6)"> 6 </button>
+        <button onclick="adicionarOperador('*')"> x </button>
+
+        <!-- Terceira linha -->
+        <button onclick="adicionarNumero(1)"> 1 </button>
+        <button onclick="adicionarNumero(2)"> 2 </button>
+        <button onclick="adicionarNumero(3)"> 3 </button>
+        <button onclick="adicionarOperador('-')"> - </button>
+
+        <!-- Quarta linha -->
+        <button onclick="adicionarNumero(0)"> 0 </button>
+        <button onclick="adicionarNumero('.')"> . </button>
+
+        <!-- Botão de resultado -->
+        <button onclick="calcular()">=</button>
+
+        <!-- Operador soma -->
+        <button onclick="adicionarOperador('+')"> + </button>
+
+    </div>
+    </div>
+
+    <!-- Arquivo JavaScript -->
+    <script
+    src="{{ url_for('static', filename='script.js') }}">
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+/*
+==================================================
+               ESTILIZAÇÃO GERAL
+==================================================
+*/
+
+
+
+/* Centraliza toda a calculadora */
+body {
+
+    font-family: Arial, serif;
+
+    background: #222;
+
+    color: #70aa5d;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    height: 100vh;
+}
+
+/*
+==================================================
+              CONTAINER PRINCIPAL
+==================================================
+*/
+
+.container {
+
+    background: rgb(184 178 193 / 0.13);
+
+    padding: 35px;
+
+    border-radius: 20px;
+}
+
+/*
+==================================================
+                    BOTÕES
+==================================================
+*/
+
+button {
+    padding: 10px;
+
+    border-radius: 20px;
+
+    height: 60px;
+
+    width: 60px;
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    border: none;
+
+    background-color: #e8e3e3;
+}
+
+/* Efeito ao passar mouse */
+button:hover {
+
+    transform: scale(1.05);
+}
+
+/*
+==================================================
+               GRID DOS BOTÕES
+==================================================
+*/
+.botoes {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 70px);
+
+    gap: 10px;
+
+    margin-top: 20px;
+
+    justify-content: center;
+}
+
+/*
+==================================================
+                    VISOR
+==================================================
+*/
+
+#visor {
+
+    width: 300px;
+
+    height: 60px;
+
+    font-size: 32px;
+
+    text-align: right;
+
+    padding-right: 10px;
+
+    border-radius: 10px;
+
+    border: none;
+
+    background-color: #e8eded;
+}
